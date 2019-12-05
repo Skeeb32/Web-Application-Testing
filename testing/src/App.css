@@ -71,19 +71,6 @@ button {
   margin-left: 10px;
 }
 
-.score{
-  background: rgb(32, 143, 64);
-  border-radius: 5px;
-  padding: 1rem;
-  color: rgb(200, 255, 0);
-  font-size: 20px;
-  border: none;
-  margin-top: 5%;
-  margin-left: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-
 .balls, .strikes, .fouls, .hits {
   border: 2px solid orange;
   padding: 5px 5px 5px 5px;

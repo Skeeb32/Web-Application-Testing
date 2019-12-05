@@ -20,14 +20,14 @@ function DashBoard() {
   const [hits, setHits] = useState(0);
 
   const ball = () => {
-    if (balls < 4) {
+    if (balls < 3) {
       setBalls(balls + 1);
     } else {
       setBalls(0);
     }
   };
   const strike = () => {
-    if (strikes < 3) {
+    if (strikes < 2) {
       setStrikes(strikes + 1);
     } else {
       setStrikes(0);

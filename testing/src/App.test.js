@@ -29,3 +29,10 @@ test('see if dashboard works', () => {
   const container = render(<App />);
   container.getByText('Baseball');
 });
+
+test('see if balls works', () => {
+  const { getByTestId } = render(<App />);
+  const linkElement = getByTestId('balls');
+  expect(linkElement).toBeInDocument();
+
+});
