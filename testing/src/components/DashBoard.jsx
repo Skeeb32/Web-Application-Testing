@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
-
 import Display from './Display';
+import styled from "styled-components";
+
+const Card = styled.div`
+  background-color: white;
+  width: 480px;
+  height: 150px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 1px 4px black;
+  text-align: center;
+  margin: 10px auto;
+`;
 
 function DashBoard() {
   const [strikes, setStrikes] = useState(0);
@@ -36,12 +47,13 @@ function DashBoard() {
     if (hits === 0) {
       setStrikes(0);
       setBalls(0);
-    } 
+    }
   };
 
   return (
     <div>
-      <h1>Baseball Dashboard</h1>
+      <Card>
+      <h1>Dashboard</h1>
 
       <button onClick={() => ball()}>Ball</button>
       <button onClick={() => strike()}>Strike</button>
@@ -57,7 +69,7 @@ function DashBoard() {
         setFouls={setFouls}
         hits={hits}
         setHits={setHits}
-      />
+      /></Card>
     </div>
   );
 }
